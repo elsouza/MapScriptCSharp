@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dados", "Dados\Dados.csproj", "{77B0873F-407B-4DB9-AEA0-56963C46DDC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{286DA970-7219-4E31-875D-736D4BB9F950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIS", "GIS\GIS.csproj", "{6B4848BC-2A52-466C-8928-F3AD44B2C11F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C81B0B1-9783-478B-9D4D-FFB24B531EF2}"
+	ProjectSection(SolutionItems) = preProject
+		notas.txt = notas.txt
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MapWebSite", "MapWebSite\", "{4295E583-0A41-4EF7-AA2F-67F3387CA52B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{77B0873F-407B-4DB9-AEA0-56963C46DDC0}|Dados.dll;{6B4848BC-2A52-466C-8928-F3AD44B2C11F}|GIS.dll;{286DA970-7219-4E31-875D-736D4BB9F950}|Negocio.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/MapWebSite"
+		Debug.AspNetCompiler.PhysicalPath = "MapWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MapWebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MapWebSite"
+		Release.AspNetCompiler.PhysicalPath = "MapWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MapWebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2492"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B0873F-407B-4DB9-AEA0-56963C46DDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B0873F-407B-4DB9-AEA0-56963C46DDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B0873F-407B-4DB9-AEA0-56963C46DDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B0873F-407B-4DB9-AEA0-56963C46DDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286DA970-7219-4E31-875D-736D4BB9F950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286DA970-7219-4E31-875D-736D4BB9F950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286DA970-7219-4E31-875D-736D4BB9F950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286DA970-7219-4E31-875D-736D4BB9F950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4848BC-2A52-466C-8928-F3AD44B2C11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4848BC-2A52-466C-8928-F3AD44B2C11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4848BC-2A52-466C-8928-F3AD44B2C11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4848BC-2A52-466C-8928-F3AD44B2C11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4295E583-0A41-4EF7-AA2F-67F3387CA52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4295E583-0A41-4EF7-AA2F-67F3387CA52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4295E583-0A41-4EF7-AA2F-67F3387CA52B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4295E583-0A41-4EF7-AA2F-67F3387CA52B}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

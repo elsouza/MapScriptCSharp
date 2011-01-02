@@ -1,0 +1,49 @@
+MAP
+
+  NAME MAPA_EXEMPLO
+
+  UNITS METERS
+  EXTENT -85.133507 -34.727177 -21.249626 6.247749
+
+
+  LEGEND
+      IMAGECOLOR 255 255 255
+    STATUS ON
+    KEYSIZE 18 12
+    LABEL
+      TYPE BITMAP
+      SIZE MEDIUM
+      COLOR 0 0 89
+    END
+  END
+  
+  LAYER
+    NAME 'Brasil'
+    TYPE POLYGON
+    CONNECTIONTYPE postgis
+    CONNECTION "host=localhost user=postgres password=postgree dbname=map_exemplo_db"
+    DATA 'the_geom FROM tb_brasil USING UNIQUE gid'
+    STATUS DEFAULT
+    CLASS
+       STYLE
+         OUTLINECOLOR 0 0 255
+       END
+    END
+  END
+  
+  
+  LAYER
+    NAME 'SaoPaulo'
+    TYPE POLYGON
+    CONNECTIONTYPE postgis
+    CONNECTION "host=localhost user=postgres password=postgree dbname=map_exemplo_db"
+    DATA 'the_geom FROM tb_municipios USING UNIQUE gid'
+    STATUS DEFAULT
+    CLASS
+       STYLE
+         OUTLINECOLOR 210 140 140
+       END
+    END
+  END
+  
+END

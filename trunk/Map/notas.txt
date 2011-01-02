@@ -1,0 +1,5 @@
+senha do banco
+
+postgres / postgree
+
+bd name = map_exemplo_db
